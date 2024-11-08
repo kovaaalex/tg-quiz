@@ -27,6 +27,7 @@ export default function Quiz({complete}) {
             setCurrentQuestion(currentQuestion + 1)
         } else complete(score)
     }
+    
     return (<>
             <h2>Quiz</h2>
             <h3>{questions[currentQuestion].question}</h3>
