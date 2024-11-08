@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
+import react, {useState} from 'react'
 import './App.css';
+import Results from './components/Results';
+import Quiz from './components/Quiz';
 
 function App() {
+  const [quizComplete, setQuizComplete] = useState(false)
+  const [score, setScore] = useState(0)
+  function onComplete(finalScore) {
+    setScore(finalScore)
+    setQuizComplete(true)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Quiz</h1>
+      {quizComplete ? (
+          <Results></Results>
+        ) : (
+          <Quiz complete={onComplete}></Quiz> 
+        )
+      }
     </div>
   );
 }
