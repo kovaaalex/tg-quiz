@@ -18,7 +18,7 @@ const questions = [
 ]
 export default function Quiz({complete}) {
     const [currentQuestion, setCurrentQuestion] = useState(0)
-    const [score, setScore] = useState(0)
+    let [score, setScore] = useState(0)
     function handleAnswer(answer) {
         if(questions[currentQuestion].correctAnswer === answer) {
             setScore(++score)
