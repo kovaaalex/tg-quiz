@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tg-quiz/static/css/main.f855e6bc.css",
+    "main.js": "/tg-quiz/static/js/main.e5e84a64.js",
+    "static/js/453.928f93c9.chunk.js": "/tg-quiz/static/js/453.928f93c9.chunk.js",
+    "index.html": "/tg-quiz/index.html",
+    "main.f855e6bc.css.map": "/tg-quiz/static/css/main.f855e6bc.css.map",
+    "main.e5e84a64.js.map": "/tg-quiz/static/js/main.e5e84a64.js.map",
+    "453.928f93c9.chunk.js.map": "/tg-quiz/static/js/453.928f93c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.e5e84a64.js"
+  ]
+}
