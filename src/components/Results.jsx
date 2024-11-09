@@ -34,6 +34,6 @@ export default function Results({ score }) {
     }, [score]);
 
     return (
-        <h2>Results: {score} from {totalQuestions}</h2>
+        <h2>Results: {score} from, {totalQuestions}</h2>
     );
 }
