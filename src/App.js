@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <h1>Quiz</h1>
       {quizComplete ? (
-          <Results></Results>
+          <Results score={score}></Results>
         ) : (
           <Quiz complete={onComplete}></Quiz> 
         )
